@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.farhaan.sleeptrack.MainActivity"
+    android:background="@color/colorBlack">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Latest Sleeps"
+        android:layout_marginTop="10dp"
+        android:textSize="30dp"
+        android:textColor="@color/colorAccent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Date"
+            android:textSize="20dp"
+            android:textColor="@color/colorGreen"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Timings"
+            android:textColor="@color/colorGreen"
+            android:layout_marginLeft="15dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="Duration"
+            android:textColor="@color/colorGreen"
+            android:layout_marginLeft="15dp"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sleepList"
+        android:layout_marginTop="10dp"></ListView>
+</LinearLayout>
